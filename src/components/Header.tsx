@@ -31,7 +31,7 @@ const Header: Component = () => {
 	const navLinks = createMemo(() =>
 		baseNavLinks.map((link) => ({
 			...link,
-			href: isRootPath() ? `#${link.id}` : `/#${link.id}`,
+			href: isRootPath() ? `#${link.id}` : `${import.meta.env.BASE_URL}#${link.id}`,
 		})),
 	);
 
