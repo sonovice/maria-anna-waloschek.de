@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- Use TailwindCSS v4 for styling.
+- Use `bun` instead of `npm` and `bunx` instead of `npx`.
+- The projects uses biome for linting.
+- Search for files using your search/scan tools if necessary. Don't ask for paths.
+- Use your tools to read and edit files.

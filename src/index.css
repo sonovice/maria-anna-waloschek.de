@@ -1,0 +1,50 @@
+/* Import Fira Sans font styles */
+@import "@fontsource/fira-sans/400.css"; /* Regular */
+@import "@fontsource/fira-sans/500.css"; /* Medium */
+@import "@fontsource/fira-sans/600.css"; /* Semi-bold */
+@import "@fontsource/fira-sans/700.css"; /* Bold */
+
+@import "@fontsource/yrsa/400-italic.css";
+
+@import "tailwindcss";
+@import "tailwindcss/theme";
+
+@layer base {
+	:root {
+		color-scheme: light;
+	}
+
+	:root[data-theme="dark"] {
+		color-scheme: dark;
+	}
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(calc(-1 * var(--marquee-scroll-width, 1000px)));
+	}
+}
+
+@theme {
+	--font-fira-sans: "Fira Sans";
+	--font-yrsa: "Yrsa";
+	--animation-marquee: marquee;
+}
+
+html,
+body,
+#root {
+	@apply h-dvh font-fira-sans;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
