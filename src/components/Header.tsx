@@ -26,7 +26,7 @@ const Header: Component = () => {
 		location.pathname === "/" ? "#home" : null,
 	);
 
-	const isRootPath = createMemo(() => location.pathname === "/");
+	const isRootPath = createMemo(() => location.pathname === import.meta.env.BASE_URL);
 
 	const navLinks = createMemo(() =>
 		baseNavLinks.map((link) => ({
