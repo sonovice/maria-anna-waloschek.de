@@ -3,20 +3,20 @@ import { For, type Component } from "solid-js";
 const Logos: Component = () => {
     // Actual logos from the public folder, including names and URLs
     const logoItems = [
-        { src: '/logos/zhdk-zuerich.svg', name: 'ZHdK Zürich', url: 'https://www.zhdk.ch/' },
-        { src: '/logos/hmt-muenchen.svg', name: 'HMT München', url: 'https://hmtm.de/' },
-        { src: '/logos/hfm-detmold.svg', name: 'HfM Detmold', url: 'https://www.hfm-detmold.de/' },
-        { src: '/logos/hfm-wuerzburg.png', name: 'HfM Würzburg', url: 'https://www.hfm-wuerzburg.de/' },
-        { src: '/logos/vdm-verband_deutscher_musikschulen.svg', name: 'Verband deutscher Musikschulen', url: 'https://www.musikschulen.de/' },
-        { src: '/logos/epga-european_piano_teacher_association.svg', name: 'European Piano Teachers Association', url: 'https://www.epta-deutschland.de/' },
-        { src: '/logos/muku-bielefeld.png', name: 'Musik- und Kunstschule Bielefeld', url: 'https://muku-bielefeld.de/' },
-        { src: '/logos/hfm-trossingen.svg', name: 'HfM Trossingen', url: 'https://www.hfm-trossingen.de/' },
-        { src: '/logos/hfm-weimar.svg', name: 'HfM Weimar', url: 'https://www.hfm-weimar.de/' },
-        { src: '/logos/hfmdk-frankfurt.svg', name: 'HfMDK Frankfurt', url: 'https://www.hfmdk-frankfurt.de/' },
-        { src: '/logos/hmt-koeln.svg', name: 'HMT Köln', url: 'https://www.hfmt-koeln.de/' },
-        { src: '/logos/hslu-luzern.svg', name: 'Hochschule Luzern', url: 'https://www.hslu.ch/de-ch/musik/' },
-        { src: '/logos/mdw_wien.svg', name: 'mdw Wien', url: 'https://www.mdw.ac.at/' },
-        { src: '/logos/netzwerk_4.0_der_musikhochschulen.svg', name: 'Netzwerk 4.0 der Musikhochschulen', url: 'https://www.netzwerk-musikhochschulen.de/' },
+        { src: 'logos/zhdk-zuerich.svg', name: 'ZHdK Zürich', url: 'https://www.zhdk.ch/' },
+        { src: 'logos/hmt-muenchen.svg', name: 'HMT München', url: 'https://hmtm.de/' },
+        { src: 'logos/hfm-detmold.svg', name: 'HfM Detmold', url: 'https://www.hfm-detmold.de/' },
+        { src: 'logos/hfm-wuerzburg.png', name: 'HfM Würzburg', url: 'https://www.hfm-wuerzburg.de/' },
+        { src: 'logos/vdm-verband_deutscher_musikschulen.svg', name: 'Verband deutscher Musikschulen', url: 'https://www.musikschulen.de/' },
+        { src: 'logos/epga-european_piano_teacher_association.svg', name: 'European Piano Teachers Association', url: 'https://www.epta-deutschland.de/' },
+        { src: 'logos/muku-bielefeld.png', name: 'Musik- und Kunstschule Bielefeld', url: 'https://muku-bielefeld.de/' },
+        { src: 'logos/hfm-trossingen.svg', name: 'HfM Trossingen', url: 'https://www.hfm-trossingen.de/' },
+        { src: 'logos/hfm-weimar.svg', name: 'HfM Weimar', url: 'https://www.hfm-weimar.de/' },
+        { src: 'logos/hfmdk-frankfurt.svg', name: 'HfMDK Frankfurt', url: 'https://www.hfmdk-frankfurt.de/' },
+        { src: 'logos/hmt-koeln.svg', name: 'HMT Köln', url: 'https://www.hfmt-koeln.de/' },
+        { src: 'logos/hslu-luzern.svg', name: 'Hochschule Luzern', url: 'https://www.hslu.ch/de-ch/musik/' },
+        { src: 'logos/mdw_wien.svg', name: 'mdw Wien', url: 'https://www.mdw.ac.at/' },
+        { src: 'logos/netzwerk_4.0_der_musikhochschulen.svg', name: 'Netzwerk 4.0 der Musikhochschulen', url: 'https://www.netzwerk-musikhochschulen.de/' },
     ];
 
     return (

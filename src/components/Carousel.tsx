@@ -19,7 +19,7 @@ const Carousel: Component = () => {
             title: "Founder at Icomatic Pvt Ltd",
             content:
                 "Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure. simply dummy text of the printing and typesetting industry.",
-            imageUrl: "/portrait.jpg",
+            imageUrl: "portrait.jpg",
         },
         {
             id: 2,
@@ -27,7 +27,7 @@ const Carousel: Component = () => {
             title: "CEO at Example Inc.",
             content:
                 "Slide 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            imageUrl: "/portrait.jpg",
+            imageUrl: "portrait.jpg",
         },
         {
             id: 3,
@@ -35,7 +35,7 @@ const Carousel: Component = () => {
             title: "Designer at Creative Co.",
             content:
                 "Slide 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            imageUrl: "/portrait.jpg",
+            imageUrl: "portrait.jpg",
         },
         {
             id: 4,
@@ -43,7 +43,7 @@ const Carousel: Component = () => {
             title: "Developer at Tech Solutions",
             content:
                 "Slide 4: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            imageUrl: "/portrait.jpg",
+            imageUrl: "portrait.jpg",
         },
     ];
 

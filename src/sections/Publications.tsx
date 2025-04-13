@@ -133,7 +133,7 @@ const Publications: Component = () => {
 								<div class="relative overflow-hidden rounded-md shadow-md transform transition duration-300 group-hover:scale-[1.02] max-w-64 mx-auto">
 									<img
 										class="w-full h-auto object-cover"
-										src="/book_cover.png"
+										src="book_cover.png"
 										alt="Buchcover: Die Kunst der Lehre"
 									/>
 								</div>
