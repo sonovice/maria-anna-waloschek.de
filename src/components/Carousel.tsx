@@ -15,11 +15,20 @@ const Carousel: Component = () => {
     const slides = [
         {
             id: 1,
-            name: "Jay Shah",
-            title: "Founder at Icomatic Pvt Ltd",
+            name: "Anja Damianov",
+            title: (
+                <>
+                    Dozentin für Klavier und Improvisation
+                    <br />
+                    HfM Detmold
+                </>
+            ),
             content:
-                "Easy to use, reasonably priced simply dummy text of the printing and typesetting industry. Quidam lisque persius interesset his et, in quot quidam possim iriure. simply dummy text of the printing and typesetting industry.",
-            imageUrl: "portrait.jpg",
+                (<>
+                    Als Teilnehmerin der Fortbildung „Die Kunst der Lehre - Zertifikat für Lehrende an Musikhochschulen“ profitierte ich sowohl von Maria Waloscheks künstlerischer Erfahrung als auch von ihrer wissenschaftlichen Expertise im Bereich Hochschuldidaktik. Ihre hervorragend vorbereiteten Workshops sind klar strukturiert und bereichern durch echte thematische Relevanz.
+                </>),
+
+            imageUrl: "images/anja_damianov.jpg",
         },
         {
             id: 2,
@@ -191,7 +200,7 @@ const Carousel: Component = () => {
                     pauseAutoSlideTemporarily();
                 }}
                 aria-label="Previous Slide"
-                class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-neutral-400 hover:bg-neutral-500 text-white p-3 rounded-full cursor-pointer z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
+                class="absolute top-1/2 left-5 transform -translate-y-1/2 bg-neutral-400 hover:bg-neutral-500 text-white p-3 cursor-pointer z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -224,7 +233,7 @@ const Carousel: Component = () => {
                             data-index={index()}
                             class="flex-shrink-0 w-full snap-center flex flex-col items-center justify-center  px-10" // Ensure slide takes full width for snapping
                         >
-                            <p class="text-2xl mb-3  font-yrsa italic">„{slide.content}“</p>
+                            <p class="text-2xl mb-3 font-yrsa italic text-balance hyphens-auto">„{slide.content}“</p>
                             <div class="flex flex-col items-center mt-6">
                                 <img
                                     src={slide.imageUrl}
@@ -249,7 +258,7 @@ const Carousel: Component = () => {
                     pauseAutoSlideTemporarily();
                 }}
                 aria-label="Next Slide"
-                class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-neutral-400 hover:bg-neutral-500 text-white p-3 rounded-full cursor-pointer z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
+                class="absolute top-1/2 right-5 transform -translate-y-1/2 bg-neutral-400 hover:bg-neutral-500 text-white p-3 cursor-pointer z-20 transition-opacity duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -277,7 +286,7 @@ const Carousel: Component = () => {
                         <button
                             type="button"
                             aria-label={`Go to slide ${index() + 1}`}
-                            class={`w-3 h-3 rounded-full cursor-pointer transition-colors duration-200 ease-in-out ${currentIndex() === index() ? "bg-yellow-400" : "bg-neutral-400 hover:bg-neutral-500"}`}
+                            class={`w-3 h-3 cursor-pointer transition-colors duration-200 ease-in-out ${currentIndex() === index() ? "bg-yellow-400" : "bg-neutral-400 hover:bg-neutral-500"}`}
                             onClick={() => {
                                 goToSlide(index());
                                 pauseAutoSlideTemporarily();

@@ -28,7 +28,7 @@ const Logos: Component = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label={`Link to ${logo.name} website`}
-                        class="shadow transition duration-150 hover:cursor-pointer hover:shadow-lg hover:-translate-y-0.5 flex flex-col items-center justify-center group p-3 rounded bg-neutral-50"
+                        class="shadow transition duration-150 hover:cursor-pointer hover:shadow-lg hover:-translate-y-0.5 flex flex-col items-center justify-center group p-3 bg-neutral-50"
                     >
                         <div class="h-14 flex items-center justify-center">
                             <img

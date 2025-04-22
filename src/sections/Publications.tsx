@@ -11,6 +11,8 @@ interface Publication {
 	description?: string[];
 	titleIsItalic?: boolean;
 	sourceIsItalic?: boolean;
+	url?: string;
+	retrievalDate?: string;
 }
 
 const Publications: Component = () => {
@@ -39,6 +41,18 @@ const Publications: Component = () => {
 			publisher: "Musikdidaktik-Netzwerk der Musikhochschule Münster",
 			type: "Artikel",
 			titleIsItalic: true,
+			url: "https://www.uni-muenster.de/imperia/md/content/musikhochschule/Studium_V2/Studienangelegenheiten/rahmen_zur_kriteriengeleiteten_unterrichtsbeobachtung_und_-beurteilung.pdf",
+			retrievalDate: "15.04.2025",
+		},
+		{
+			title: "Teamteaching im Kontext Musikschulen",
+			authors: "Waloschek, M. A.",
+			year: "2023, Heft 6",
+			sourcePrefix: "In",
+			source: "üben & musizieren",
+			type: "Artikel",
+			titleIsItalic: false,
+			sourceIsItalic: true,
 		},
 		{
 			title:
@@ -57,7 +71,7 @@ const Publications: Component = () => {
 			authors: "Saulich, Maria",
 			year: "2017, Heft 1",
 			sourcePrefix: "In",
-			source: "Üben & Musizieren",
+			source: "üben & musizieren",
 			type: "Artikel",
 			titleIsItalic: false,
 			sourceIsItalic: true,
@@ -91,8 +105,6 @@ const Publications: Component = () => {
 	];
 
 	const renderPublicationText = (pub: Publication, isFeatured = false) => {
-		const yearPunctuation = pub.title === "Rahmen zur kriteriengeleiteten Unterrichtsbeobachtung und -beurteilung" ? ":" : ".";
-
 		return (
 			<p class={`text-sm ${isFeatured ? 'text-neutral-700' : 'text-neutral-600'}`}>
 				{pub.source && (
@@ -102,9 +114,18 @@ const Publications: Component = () => {
 						.{" "}
 					</>
 				)}
-				({pub.year})
-
 				{pub.publisher && <> {pub.publisher}.</>}
+				{' '}({pub.year})
+				{pub.url && (
+					<div class="mt-1">
+						{' '}Verfügbar unter:{' '}
+						<a href={pub.url} target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
+							Link zum PDF
+						</a>
+						{pub.retrievalDate && <> (Abgerufen am {pub.retrievalDate})</>}
+						.
+					</div>
+				)}
 			</p>
 		);
 	};
@@ -130,7 +151,7 @@ const Publications: Component = () => {
 					>
 						<div class="bg-yellow-50 p-6 border-l-4 border-yellow-300 shadow-sm flex flex-col md:flex-row gap-6 md:gap-8 items-start group-hover:shadow-md transition-shadow duration-200">
 							<div class="w-full md:w-1/4 lg:w-1/5 flex-shrink-0">
-								<div class="relative overflow-hidden rounded-md shadow-md transform transition duration-300 group-hover:scale-[1.02] max-w-64 mx-auto">
+								<div class="relative overflow-hidden shadow-md transform transition duration-300 group-hover:scale-[1.02] max-w-64 mx-auto">
 									<img
 										class="w-full h-auto object-cover"
 										src="book_cover.png"
@@ -141,11 +162,11 @@ const Publications: Component = () => {
 							<div class="flex-grow">
 								<div class="flex justify-center md:justify-end items-start mb-2">
 									{/* Merged Tag: Type (Gray) + Year (Yellow) */}
-									<span class="inline-flex overflow-hidden rounded-full text-xs font-medium shrink-0">
-										<span class="bg-neutral-200 text-neutral-700 pl-3 pr-2.5 py-1">
+									<span class="inline-flex overflow-hidden text-xs font-medium shrink-0">
+										<span class="bg-neutral-200 text-neutral-700 px-2.5 py-1">
 											Buch
 										</span>
-										<span class="bg-yellow-300 text-neutral-700 pl-2.5 pr-3 py-1">
+										<span class="bg-yellow-300 text-neutral-700 px-2.5 py-1">
 											{publications[0].year.split(",")[0]}
 										</span>
 									</span>
@@ -176,11 +197,11 @@ const Publications: Component = () => {
 									<div class="flex flex-col h-full">
 										<div class="flex justify-center md:justify-end items-start mb-2">
 											{/* Merged Tag: Type (Gray) + Year (Yellow) */}
-											<span class="inline-flex overflow-hidden rounded-full text-xs font-medium shrink-0">
-												<span class="bg-neutral-200 text-neutral-700 pl-3 pr-2.5 py-1">
+											<span class="inline-flex overflow-hidden text-xs font-medium shrink-0">
+												<span class="bg-neutral-200 text-neutral-700 px-2.5 py-1">
 													{pub.type}
 												</span>
-												<span class="bg-yellow-300 text-neutral-700 pl-2.5 pr-3 py-1">
+												<span class="bg-yellow-300 text-neutral-700 px-2.5 py-1">
 													{pub.year.split(",")[0]}
 												</span>
 											</span>

@@ -26,7 +26,7 @@ const Header: Component = () => {
 		location.pathname === "/" ? "#home" : null,
 	);
 
-	const isRootPath = createMemo(() => location.pathname === import.meta.env.BASE_URL);
+	const isRootPath = createMemo(() => location.pathname === '/');
 
 	const navLinks = createMemo(() =>
 		baseNavLinks.map((link) => ({
@@ -135,7 +135,7 @@ const Header: Component = () => {
 			<div class="bg-white text-black flex flex-row justify-between items-center  h-fit px-4 container mx-auto">
 				<button
 					type="button"
-					onClick={(e) => handleClick(e, isRootPath() ? "#home" : "/#home")}
+					onClick={(e) => handleClick(e, isRootPath() ? "#home" : `${import.meta.env.BASE_URL}#home`)}
 					class="text-lg uppercase leading-4 py-4 hover:cursor-pointer"
 				>
 					<div class="">Maria Anna</div>

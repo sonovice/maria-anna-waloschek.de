@@ -52,7 +52,7 @@ const Portfolio: Component = () => {
 			<div class="container mx-auto px-4 py-8 lg:py-16">
 				{/* Section Header */}
 				<div class="flex flex-col items-center justify-center mb-8 lg:mb-12">
-					<div class="uppercase bg-yellow-300 px-3 py-1 text-sm font-semibold tracking-wider rounded-sm">
+					<div class="uppercase bg-yellow-300 px-3 py-1 text-sm font-semibold tracking-wider">
 						Portfolio
 					</div>
 					<h2 class="mt-4 text-3xl font-semibold text-center text-neutral-800">
@@ -67,7 +67,7 @@ const Portfolio: Component = () => {
 				<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6 items-start">
 					<For each={portfolioItems}>
 						{(item) => (
-							<div class="rounded-lg flex flex-col text-center">
+							<div class="flex flex-col text-center">
 								{/* Icon */}
 								<div class="flex-shrink-0 h-20 flex justify-center items-center">
 									<div class="inline-flex items-center justify-center h-12 w-12 lg:h-14 lg:w-14 fill-yellow-300">

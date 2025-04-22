@@ -32,10 +32,10 @@ const Contact: Component = () => {
 					Kontakt
 				</div>
 				<h2 class="text-3xl font-semibold mb-6">
-					Lassen Sie uns zusammenarbeiten
+					Lassen Sie uns ins Gespräch kommen
 				</h2>
 				<p class="text-lg lg:text-xl text-neutral-700 mb-8 max-w-2xl mx-auto">
-					Interessiert an einer Zusammenarbeit oder haben Sie Fragen zu meinen Angeboten? Ich freue mich darauf, von Ihnen zu hören. Der beste Weg, mich zu erreichen, ist per E-Mail.
+					Sie würden gerne mit mir in Kontakt treten oder haben Fragen zu meinen Angeboten? Ich freue mich darauf, von Ihnen zu hören! Gerne entwerfe ich ein passgenaues, individuelles Angebot für Ihre Institution oder für Sie persönlich.
 				</p>
 				<button
 					type="button"
@@ -56,7 +56,7 @@ const Contact: Component = () => {
 					</button>
 					{showTooltip() && (
 						<output
-							class="absolute -top-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-neutral-700 text-white text-sm rounded py-1 px-2 shadow z-10"
+							class="absolute -top-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap bg-neutral-700 text-white text-sm py-1 px-2 shadow z-10"
 						>
 							Kopiert!
 						</output>
