@@ -6,8 +6,7 @@ interface Publication {
 	year: string;
 	publisher?: string;
 	source?: string;
-	sourcePrefix?: "In" | "In:";
-	type: "Buch" | "Buchbeitrag" | "Artikel";
+	type: "Buch" | "Buchbeitrag" | "Artikel" | "Handreichung";
 	description?: string[];
 	titleIsItalic?: boolean;
 	sourceIsItalic?: boolean;
@@ -39,7 +38,7 @@ const Publications: Component = () => {
 				"Bernhardt, W., Bialonski, A., Fiebig-Fechtner, S., Keller, G., Kornel, A., Maag, H., Materne, N., Plenge, B., Waloschek, M. A. & Zernott, A.",
 			year: "2020",
 			publisher: "Musikdidaktik-Netzwerk der Musikhochschule Münster",
-			type: "Artikel",
+			type: "Handreichung",
 			titleIsItalic: true,
 			url: "https://www.uni-muenster.de/imperia/md/content/musikhochschule/Studium_V2/Studienangelegenheiten/rahmen_zur_kriteriengeleiteten_unterrichtsbeobachtung_und_-beurteilung.pdf",
 			retrievalDate: "15.04.2025",
@@ -48,7 +47,6 @@ const Publications: Component = () => {
 			title: "Teamteaching im Kontext Musikschulen",
 			authors: "Waloschek, M. A.",
 			year: "2023, Heft 6",
-			sourcePrefix: "In",
 			source: "üben & musizieren",
 			type: "Artikel",
 			titleIsItalic: false,
@@ -59,7 +57,6 @@ const Publications: Component = () => {
 				'"Improvisation und Gedöns" – Stellenwert, hochschuldidaktische Einbindung und Perspektiven von Improvisation an deutschen Musikhochschulen. Ein Bericht zur 3. Summer School des Netzwerks Musikhochschulen',
 			authors: "Damianov, Anja & Saulich, Maria",
 			year: "2018, Dezember",
-			sourcePrefix: "In",
 			source: "improfil – Theorie und Praxis improvisierter Musik",
 			type: "Artikel",
 			titleIsItalic: false,
@@ -70,7 +67,6 @@ const Publications: Component = () => {
 				"Begeisterung – Liebe – aufrichtiges Interesse. Eigenschaften und Fähigkeiten einer idealen Lehrperson aus Sicht der Schülerinnen und Schüler",
 			authors: "Saulich, Maria",
 			year: "2017, Heft 1",
-			sourcePrefix: "In",
 			source: "üben & musizieren",
 			type: "Artikel",
 			titleIsItalic: false,
@@ -81,7 +77,6 @@ const Publications: Component = () => {
 				"Neue Perspektiven für den künstlerischen Einzelunterricht – Co-Teaching und Teamteaching an Musikhochschulen",
 			authors: "Saulich, Maria",
 			year: "2017",
-			sourcePrefix: "In",
 			source:
 				"Clausen, Bernd & Geuen, Heinz (Hrsg.): Qualitätsmanagement und Lehrentwicklung an Musik‐hochschulen. Konzepte – Projekte – Perspektiven",
 			publisher: "Münster: Waxmann",
@@ -94,7 +89,6 @@ const Publications: Component = () => {
 				"Personalentwicklung in der Lehre – Hintergründe, konzeptioneller Ansatz und Ideen zu einem musikhochschulspezifischen Zertifikatsprogramm zur Professionalisierung von Lehrkompetenz",
 			authors: "Baus, Christine & Dübler, Maika & Saulich, Maria",
 			year: "2017",
-			sourcePrefix: "In:",
 			source:
 				"Clausen, Bernd & Geuen, Heinz (Hrsg.): Qualitätsmanagement und Lehrentwicklung an Musik‐hochschulen. Konzepte – Projekte – Perspektiven",
 			publisher: "Münster: Waxmann",
@@ -109,7 +103,7 @@ const Publications: Component = () => {
 			<p class={`text-sm ${isFeatured ? 'text-neutral-700' : 'text-neutral-600'}`}>
 				{pub.source && (
 					<>
-						{" "}{pub.sourcePrefix ?? "In"}{" "}
+						{" "}In{" "}
 						{pub.sourceIsItalic ? <i class="italic">{pub.source}</i> : pub.source}
 						.{" "}
 					</>
@@ -122,7 +116,7 @@ const Publications: Component = () => {
 						<a href={pub.url} target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">
 							Link zum PDF
 						</a>
-						{pub.retrievalDate && <> (Abgerufen am {pub.retrievalDate})</>}
+						{/* {pub.retrievalDate && <> (Abgerufen am {pub.retrievalDate})</>} */}
 						.
 					</div>
 				)}
@@ -138,7 +132,7 @@ const Publications: Component = () => {
 						Publikationen
 					</div>
 					<div class="mt-4 text-3xl font-semibold text-center">
-						Eine Auswahl meiner Veröffentlichungen
+						Ausgewählte Veröffentlichungen
 					</div>
 				</div>
 

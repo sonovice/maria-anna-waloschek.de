@@ -16,10 +16,7 @@ const About: Component = () => {
 						lang="de"
 					>
 						<p>
-							Herzlich willkommen! Ich helfe Musikschulen und Musikhochschulen, ihre Lehre praxisnah zu gestalten – durch Workshops, Beratung und Coaching zu Themen wie Feedback, Reflexion und Lehrqualität.
-						</p>
-						<p>
-							Dabei schöpfe ich unter anderem aus Erfahrungen in der Koordination der Lehrentwicklung im <i>Netzwerk Musikhochschulen</i>, mehrjähriger Lehrtätigkeit an Musikschulen und Musikhochschulen sowie einer Vertretungsprofessur an der Universität Münster. Studienabschlüsse in Musikpädagogik, Klavier und Management sowie eigene künstlerische Praxis runden mein Profil ab.
+							Herzlich willkommen! Als Hochschuldidaktikerin, Musikpädagogin und aktive Musikerin unterstütze ich Lehrende und Musik(hoch)schulen dabei, Lehr-/Lernprozesse lebendig und zukunftsfähig zu gestalten. In meinen Angeboten – von Workshops bis zur langfristigen Begleitung – stehen kooperative Methoden, reflektierte Praxis und die Entwicklung nachhaltiger Qualitätsstandards im Mittelpunkt. Meine Triebfeder dabei: Die Freude am lebenslangen Lernen und die Neugier, gemeinsam neue Lernräume zu entdecken und kreativ zu bespielen.
 						</p>
 						{/* <p>
 							Interesse an einer Weiterentwicklung Ihrer Lehre? Kontaktieren Sie
@@ -29,10 +26,10 @@ const About: Component = () => {
 				</div>
 				<div class="italic lg:pl-6 mt-4 lg:mt-0 lg:w-1/3 text-3xl font-yrsa flex flex-col justify-center text-center">
 					<div class="relative py-4">
-						Die Kunst der Lehre
-						<br class="hidden lg:block" /> weiterentwickeln
-						<br class="" /> – gemeinsam und
-						<br class="hidden lg:block" /> individuell.
+						Gute Lehre ist
+						<br class="hidden lg:block" /> kein Zustand,
+						<br class="" /> sondern ein
+						<br class="hidden lg:block" /> Prozess.
 						<div class="absolute -top-4 right-4 -z-10">
 							<svg
 								class="fill-neutral-200 w-12"

@@ -2,38 +2,40 @@ import { For, type Component } from "solid-js";
 
 const vitaItems = [
 	{
-		title: "Freiberufliche Musikhochschuldidaktikerin & Beraterin",
+		title: "Freiberufliche Musik(hoch)schuldidaktikerin & Beraterin | seit 2017",
 		description:
-			"Konzeption und Durchführung von Workshops, Coachings und Beratungen für Lehrende und Institutionen.",
+			"Konzeption und Durchführung von Weiterbildungsprogrammen, Beratung und langfristige Begleitung für Lehrende und Institutionen",
 	},
 	{
-		title: "Vertretungsprofessur für Musikpädagogik",
-		description: "Universität Münster.",
+		title:
+			"Vertretungsprofessorin (Studienjahr 2024/2025) und Lehrbeauftragte (2017-2024) für Instrumental- und Gesangspädagogik | Universität Münster",
+		description:
+			"Lehre, Studiengangsentwicklung, Betreuung von Abschlussarbeiten, Konzeption von institutionsübergreifenden Musikdidaktikkonferenzen, Prüfungs- und Gremientätigkeiten",
 	},
 	{
-		title: "Koordination der Lehrentwicklung (Netzwerk Musikhochschulen)",
+		title: "Wissenschaftliche Mitarbeiterin | Hochschule für Musik Detmold (2015-2018)",
 		description:
-			'Entwicklung und Leitung des ersten Zertifikatsprogramms "Die Kunst der Lehre" (angesiedelt an der HfM Detmold).',
+			"Zentrale Koordinatorin für Lehr- und Personalentwicklung des *Netzwerk Musikhochschulen*, inhaltliche Gestaltung, Moderations- und Beratungstätigkeit von hochschulübergreifenden Weiterbildungsprogrammen und Tagungen für Lehrende, Studierende und Mitglieder der Verwaltung, Betreuung von Pilotprojekten zu innovativen Lehr-/Lernansätzen an den Verbundhochschulen, projektbezogene Publikationen und Forschung im Bereich Lehren und Lernen an Musikhochschulen",
 	},
 	{
-		title: "Herausgeberin & Autorin",
+		title: "Musikvermittlerin und Kulturmanagerin | Stadt Bayreuth (2011-2013)",
 		description:
-			'Praxishandbuch "Die Kunst der Lehre" und weitere Publikationen zur Hochschuldidaktik und zum Peer Learning.',
+			"Künstlerisch-pädagogische Konzeption und Leitung von Musikvermittlungsprogrammen und Kooperationen anlässlich der Jubiläen Liszt (2011) und Wagner (2013)",
 	},
 	{
-		title: "Mehrjährige Lehrerfahrung",
+		title: "Instrumentalpädagogin (seit 2005)",
 		description:
-			"Sowohl an Musikschulen (Klavier, Kammermusik, Methodik in Bayreuth) als auch an Musikhochschulen (Lehraufträge in Münster).",
-	},
-	{
-		title: "Akademische Abschlüsse",
-		description:
-			// "Master Musikpädagogik (HfMT Köln), Diplome in Instrumentalpädagogik und Künstlerischer Ausbildung Klavier (HfM Würzburg), Professional Diploma in Management (Open University).",
-			"Diplome in Instrumentalpädagogik und Künstlerischer Ausbildung Klavier (HfM Würzburg), Professional Diploma in Management (Open University).",
+			"Lehre in den Fächern Klavier, Kammermusik, Musiktheorie und Improvisation für unterschiedliche Niveau- und Altersstufen, Entwicklung von konzertpädagogischen Formaten",
 	},
 	{
 		title: "Aktive Musikerin",
-		description: "Freischaffende Pianistin (Klavierduo, Liedbegleitung).",
+		description:
+			"Freischaffende Pianistin (Klavierduo, Liedbegleitung), Sängerin im Jazz-/Pop-Vokalensemble *vode- (https://www.vode-ensemble.de/)",
+	},
+	{
+		title: "Akademische Ausbildung und Abschlüsse",
+		description:
+			"Diplome in Instrumentalpädagogik, Künstlerisches Konzertfach Klavier sowie Fortbildungsklasse Klavier (HfM Würzburg), Professional Diploma in Management (Open University), Zertifikat in Artistic Research in Music (Orpheus Institute in Kooperation mit der KU Leuven)",
 	},
 ];
 
@@ -46,7 +48,7 @@ const Vita: Component = () => {
 						Vita
 					</div>
 					<div class="mt-4 text-3xl font-semibold text-center">
-						Ausgewählte Stationen und Qualifikationen
+						Berufliche Stationen und Qualifikationen
 					</div>
 				</div>
 				<div class="mt-12 relative">

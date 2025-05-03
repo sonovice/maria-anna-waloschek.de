@@ -12,8 +12,8 @@ const baseNavLinks = [
 	{ id: "home", label: "Home" },
 	{ id: "about", label: "Über mich" },
 	{ id: "portfolio", label: "Portfolio" },
-	{ id: "references", label: "Referenzen" },
 	{ id: "vita", label: "Vita" },
+	{ id: "references", label: "Referenzen" },
 	{ id: "publications", label: "Publikationen" },
 	{ id: "contact", label: "Kontakt" },
 ];
