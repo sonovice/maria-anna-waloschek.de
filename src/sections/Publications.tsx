@@ -55,7 +55,7 @@ const Publications: Component = () => {
 		{
 			title:
 				'"Improvisation und Gedöns" – Stellenwert, hochschuldidaktische Einbindung und Perspektiven von Improvisation an deutschen Musikhochschulen. Ein Bericht zur 3. Summer School des Netzwerks Musikhochschulen',
-			authors: "Damianov, Anja & Saulich, Maria",
+			authors: "Damianov, Anja & Saulich (jetzt Waloschek), Maria",
 			year: "2018, Dezember",
 			source: "improfil – Theorie und Praxis improvisierter Musik",
 			type: "Artikel",
@@ -65,7 +65,7 @@ const Publications: Component = () => {
 		{
 			title:
 				"Begeisterung – Liebe – aufrichtiges Interesse. Eigenschaften und Fähigkeiten einer idealen Lehrperson aus Sicht der Schülerinnen und Schüler",
-			authors: "Saulich, Maria",
+			authors: "Saulich (jetzt Waloschek), Maria",
 			year: "2017, Heft 1",
 			source: "üben & musizieren",
 			type: "Artikel",
@@ -75,7 +75,7 @@ const Publications: Component = () => {
 		{
 			title:
 				"Neue Perspektiven für den künstlerischen Einzelunterricht – Co-Teaching und Teamteaching an Musikhochschulen",
-			authors: "Saulich, Maria",
+			authors: "Saulich (jetzt Waloschek), Maria",
 			year: "2017",
 			source:
 				"Clausen, Bernd & Geuen, Heinz (Hrsg.): Qualitätsmanagement und Lehrentwicklung an Musik‐hochschulen. Konzepte – Projekte – Perspektiven",
@@ -87,7 +87,7 @@ const Publications: Component = () => {
 		{
 			title:
 				"Personalentwicklung in der Lehre – Hintergründe, konzeptioneller Ansatz und Ideen zu einem musikhochschulspezifischen Zertifikatsprogramm zur Professionalisierung von Lehrkompetenz",
-			authors: "Baus, Christine & Dübler, Maika & Saulich, Maria",
+			authors: "Baus, Christine & Dübler, Maika & Saulich (jetzt Waloschek), Maria",
 			year: "2017",
 			source:
 				"Clausen, Bernd & Geuen, Heinz (Hrsg.): Qualitätsmanagement und Lehrentwicklung an Musik‐hochschulen. Konzepte – Projekte – Perspektiven",
@@ -100,7 +100,7 @@ const Publications: Component = () => {
 
 	const renderPublicationText = (pub: Publication, isFeatured = false) => {
 		return (
-			<p class={`text-sm ${isFeatured ? 'text-neutral-700' : 'text-neutral-600'}`}>
+			<p class={`${isFeatured ? 'text-neutral-700' : 'text-neutral-600 text-sm'}`}>
 				{pub.source && (
 					<>
 						{" "}In{" "}
@@ -125,7 +125,7 @@ const Publications: Component = () => {
 	};
 
 	return (
-		<div id="publications" class="bg-white">
+		<div id="publications" class="bg-neutral-100">
 			<div class="container mx-auto px-4 py-8 lg:py-16">
 				<div class="flex flex-col items-center justify-center">
 					<div class="uppercase bg-yellow-300 px-3 py-1 font-semibold tracking-wide">
@@ -187,7 +187,7 @@ const Publications: Component = () => {
 					<div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
 						<For each={publications.slice(1)}>
 							{(pub) => (
-								<div class="p-5 bg-neutral-50 border-l-4 border-neutral-200 hover:border-yellow-300 transition-all hover:shadow-sm">
+								<div class="p-5 bg-white border-l-4 border-neutral-200 hover:border-yellow-300 transition-all hover:shadow-sm">
 									<div class="flex flex-col h-full">
 										<div class="flex justify-center md:justify-end items-start mb-2">
 											{/* Merged Tag: Type (Gray) + Year (Yellow) */}

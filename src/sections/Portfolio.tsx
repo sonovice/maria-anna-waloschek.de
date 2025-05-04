@@ -24,13 +24,13 @@ const Portfolio: Component = () => {
 		{
 			title: "Kooperative Lehr-/Lernformate",
 			description:
-				"Konzeption und Umsetzung von Teamteaching-Settings zur Bündelung von Expertise und Förderung von Lernchancen; Etablierung von Formaten wie kollegiale Beratung und kollegialer Hospitation zur gegenseitigen Unterstützung und Professionalisierung von Lehrkompetenz.",
+				"Konzeption und Umsetzung von kollaborativen Lern-Settings zur Bündelung von Expertise und Professionalisierung von Lehrkompetenz.",
 			icon: <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><title>Kooperative Lehrformate Icon</title><path d="M80 48a48 48 0 1 1 96 0A48 48 0 1 1 80 48zm64 193.7l0 65.1 51 51c7.1 7.1 11.8 16.2 13.4 26.1l15.2 90.9c2.9 17.4-8.9 33.9-26.3 36.8s-33.9-8.9-36.8-26.3l-14.3-85.9L66.8 320C54.8 308 48 291.7 48 274.7l0-88.1c0-32.4 26.2-58.6 58.6-58.6c24.1 0 46.5 12 59.9 32l47.4 71.1 10.1 5 0-76.2c0-17.7 14.3-32 32-32l128 0c17.7 0 32 14.3 32 32l0 76.2 10.1-5L473.5 160c13.3-20 35.8-32 59.9-32c32.4 0 58.6 26.2 58.6 58.6l0 88.1c0 17-6.7 33.3-18.7 45.3l-79.4 79.4-14.3 85.9c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l15.2-90.9c1.6-9.9 6.3-19 13.4-26.1l51-51 0-65.1-19 28.5c-4.6 7-11 12.6-18.5 16.3l-59.6 29.8c-2.4 1.3-4.9 2.2-7.6 2.8c-2.6 .6-5.3 .9-7.9 .8l-126.7 0c-2.5 .1-5-.2-7.5-.7c-2.9-.6-5.6-1.6-8.1-3l-59.5-29.8c-7.5-3.7-13.8-9.4-18.5-16.3l-19-28.5zM2.3 468.1L50.1 348.6l49.2 49.2-37.6 94c-6.6 16.4-25.2 24.4-41.6 17.8S-4.3 484.5 2.3 468.1zM512 0a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm77.9 348.6l47.8 119.5c6.6 16.4-1.4 35-17.8 41.6s-35-1.4-41.6-17.8l-37.6-94 49.2-49.2z" /></svg>,
 		},
 		{
-			title: "Strategische Beratung und Programmkonzeptionen",
+			title: "Strategische Beratung und Changemanagement",
 			description:
-				"Beratung, Moderationstätigkeiten sowie Unterstützung bei der Konzeption und Einführung von Curricula und musik(hoch)schuldidaktischen Weiterbildungsformaten wie Onboarding-Programmen; Umsetzung von nachhaltigem Changemanagement.",
+				" Unterstützung bei der Konzeption und Einführung von Curricula und Weiterbildungsformaten sowie Moderationstätigkeiten.",
 			icon: <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><title>Kollegialer Austausch & Beratung Icon</title><path d="M335.5 4l288 160c15.4 8.6 21 28.1 12.4 43.5s-28.1 21-43.5 12.4L320 68.6 47.5 220c-15.4 8.6-34.9 3-43.5-12.4s-3-34.9 12.4-43.5L304.5 4c9.7-5.4 21.4-5.4 31.1 0zM320 160a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM144 256a40 40 0 1 1 0 80 40 40 0 1 1 0-80zm312 40a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM226.9 491.4L200 441.5l0 38.5c0 17.7-14.3 32-32 32l-48 0c-17.7 0-32-14.3-32-32l0-38.5L61.1 491.4c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l37.9-70.3c15.3-28.5 45.1-46.3 77.5-46.3l19.5 0c16.3 0 31.9 4.5 45.4 12.6l33.6-62.3c15.3-28.5 45.1-46.3 77.5-46.3l19.5 0c32.4 0 62.1 17.8 77.5 46.3l33.6 62.3c13.5-8.1 29.1-12.6 45.4-12.6l19.5 0c32.4 0 62.1 17.8 77.5 46.3l37.9 70.3c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8L552 441.5l0 38.5c0 17.7-14.3 32-32 32l-48 0c-17.7 0-32-14.3-32-32l0-38.5-26.9 49.9c-6.3 11.7-20.8 16-32.5 9.8s-16-20.8-9.8-32.5l36.3-67.5c-1.7-1.7-3.2-3.6-4.3-5.8L376 345.5l0 54.5c0 17.7-14.3 32-32 32l-48 0c-17.7 0-32-14.3-32-32l0-54.5-26.9 49.9c-1.2 2.2-2.6 4.1-4.3 5.8l36.3 67.5c6.3 11.7 1.9 26.2-9.8 32.5s-26.2 1.9-32.5-9.8z" /></svg>,
 		},
 		{
@@ -42,13 +42,13 @@ const Portfolio: Component = () => {
 		{
 			title: "Individuelle Lehrcoachings",
 			description:
-				"Prozessorientierte Begleitung für Lehrende in der Umsetzung von individuellen Lernzielen.",
+				"Einzelberatung und prozessorientierte Begleitung für Lehrende in der Umsetzung von individuellen Lernzielen.",
 			icon: <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><title>Lehrcoaching & Didaktische Beratung Icon</title><path d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM609.3 512l-137.8 0c5.4-9.4 8.6-20.3 8.6-32l0-8c0-60.7-27.1-115.2-69.8-151.8c2.4-.1 4.7-.2 7.1-.2l61.4 0C567.8 320 640 392.2 640 481.3c0 17-13.8 30.7-30.7 30.7zM432 256c-31 0-59-12.6-79.3-32.9C372.4 196.5 384 163.6 384 128c0-26.8-6.6-52.1-18.3-74.3C384.3 40.1 407.2 32 432 32c61.9 0 112 50.1 112 112s-50.1 112-112 112z" /></svg>,
 		},
 	];
 
 	return (
-		<div id="portfolio" class="bg-neutral-50">
+		<div id="portfolio" class="bg-white">
 			<div class="container mx-auto px-4 py-8 lg:py-16">
 				{/* Section Header */}
 				<div class="flex flex-col items-center justify-center mb-8 lg:mb-12">
@@ -87,13 +87,22 @@ const Portfolio: Component = () => {
 					</For>
 				</div>
 
+
 				{/* Call to Action Link/Button */}
-				<div class="mt-12 text-center">
+				<div class="mt-12 text-center grid grid-cols-1 md:grid-cols-2 gap-2">
 					<a
-						href="/portfolio-details" // <-- Replace with the actual link to the detailed portfolio page
-						class="inline-block text-balance bg-black text-white px-8 py-3 text-xl font-medium shadow transition duration-150 hover:cursor-pointer hover:shadow-lg hover:-translate-y-0.5"
+						href="/portfolios/Portfolio Musikschulen_Maria Waloschek.pdf"
+						class="text-balance bg-black text-white px-8 py-3 text-xl font-medium shadow transition duration-150 hover:cursor-pointer hover:shadow-lg hover:-translate-y-0.5"
+						download
 					>
-						Hier gehts zu meinem detaillierten Portfolio
+						Download Portfolio<br /> Musikschulen
+					</a>
+					<a
+						href="/portfolios/Portfolio Kunst- und Musikhochschulen_Maria Waloschek.pdf"
+						class="text-balance bg-black text-white px-8 py-3 text-xl font-medium shadow transition duration-150 hover:cursor-pointer hover:shadow-lg hover:-translate-y-0.5"
+						download
+					>
+						Download Portfolio<br /> Musik- und Kunsthochschulen
 					</a>
 				</div>
 			</div>

@@ -2,40 +2,56 @@ import { For, type Component } from "solid-js";
 
 const vitaItems = [
 	{
-		title: "Freiberufliche Musik(hoch)schuldidaktikerin & Beraterin | seit 2017",
-		description:
-			"Konzeption und Durchführung von Weiterbildungsprogrammen, Beratung und langfristige Begleitung für Lehrende und Institutionen",
+		title: "Freiberufliche Musik(hoch)schuldidaktikerin & Beraterin (seit 2017)",
+		description: [
+			"Konzeption und Durchführung von Weiterbildungsprogrammen",
+			"Beratung und langfristige Begleitung für Lehrende und Institutionen",
+		],
 	},
 	{
 		title:
 			"Vertretungsprofessorin (Studienjahr 2024/2025) und Lehrbeauftragte (2017-2024) für Instrumental- und Gesangspädagogik | Universität Münster",
-		description:
-			"Lehre, Studiengangsentwicklung, Betreuung von Abschlussarbeiten, Konzeption von institutionsübergreifenden Musikdidaktikkonferenzen, Prüfungs- und Gremientätigkeiten",
+		description: [
+			"Lehre, Studiengangsentwicklung, Betreuung von Abschlussarbeiten",
+			"Konzeption von institutionsübergreifenden Musikdidaktikkonferenzen, Prüfungs- und Gremientätigkeiten",
+		],
 	},
 	{
-		title: "Wissenschaftliche Mitarbeiterin | Hochschule für Musik Detmold (2015-2018)",
-		description:
-			"Zentrale Koordinatorin für Lehr- und Personalentwicklung des *Netzwerk Musikhochschulen*, inhaltliche Gestaltung, Moderations- und Beratungstätigkeit von hochschulübergreifenden Weiterbildungsprogrammen und Tagungen für Lehrende, Studierende und Mitglieder der Verwaltung, Betreuung von Pilotprojekten zu innovativen Lehr-/Lernansätzen an den Verbundhochschulen, projektbezogene Publikationen und Forschung im Bereich Lehren und Lernen an Musikhochschulen",
+		title: "Wissenschaftliche Mitarbeiterin (2015-2018) | Hochschule für Musik Detmold",
+		description: [
+			"Zentrale Koordinatorin für Lehr- und Personalentwicklung des <i>Netzwerk Musikhochschulen</i>",
+			"inhaltliche Gestaltung, Moderations- und Beratungstätigkeit von hochschulübergreifenden Weiterbildungsprogrammen und Tagungen für Lehrende, Studierende und Mitglieder der Verwaltung",
+			"Betreuung von Pilotprojekten zu innovativen Lehr-/Lernansätzen an den Verbundhochschulen",
+			"projektbezogene Publikationen und Forschung im Bereich Lehren und Lernen an Musikhochschulen",
+		],
 	},
 	{
-		title: "Musikvermittlerin und Kulturmanagerin | Stadt Bayreuth (2011-2013)",
-		description:
-			"Künstlerisch-pädagogische Konzeption und Leitung von Musikvermittlungsprogrammen und Kooperationen anlässlich der Jubiläen Liszt (2011) und Wagner (2013)",
+		title: "Musikvermittlerin und Kulturmanagerin (2011-2013) | Stadt Bayreuth",
+		description: [
+			"Konzeption und Leitung von Musikvermittlungsprogrammen und Kooperationen anlässlich der Jubiläen Liszt (2011) und Wagner (2013)",
+		],
 	},
 	{
 		title: "Instrumentalpädagogin (seit 2005)",
-		description:
-			"Lehre in den Fächern Klavier, Kammermusik, Musiktheorie und Improvisation für unterschiedliche Niveau- und Altersstufen, Entwicklung von konzertpädagogischen Formaten",
+		description: [
+			"Lehre in den Fächern Klavier, Kammermusik, Musiktheorie und Improvisation für unterschiedliche Niveau- und Altersstufen",
+			"Entwicklung von konzertpädagogischen Formaten",
+		],
 	},
 	{
 		title: "Aktive Musikerin",
-		description:
-			"Freischaffende Pianistin (Klavierduo, Liedbegleitung), Sängerin im Jazz-/Pop-Vokalensemble *vode- (https://www.vode-ensemble.de/)",
+		description: [
+			"Freischaffende Pianistin (Klavierduo, Liedbegleitung)",
+			"Sängerin im <a href='https://www.vode-ensemble.de/' target='_blank' rel='noopener noreferrer' class='hover:text-yellow-500 underline'>Jazz-/Pop-Vokalensemble <span class='italic'>vode</span></a>",
+		],
 	},
 	{
 		title: "Akademische Ausbildung und Abschlüsse",
-		description:
-			"Diplome in Instrumentalpädagogik, Künstlerisches Konzertfach Klavier sowie Fortbildungsklasse Klavier (HfM Würzburg), Professional Diploma in Management (Open University), Zertifikat in Artistic Research in Music (Orpheus Institute in Kooperation mit der KU Leuven)",
+		description: [
+			"Diplome in Instrumentalpädagogik, Künstlerisches Konzertfach Klavier sowie Fortbildungsklasse Klavier (HfM Würzburg)",
+			"Professional Diploma in Management (Open University)",
+			"Zertifikat in Artistic Research in Music (Orpheus Institute in Kooperation mit der KU Leuven)",
+		],
 	},
 ];
 
@@ -74,7 +90,11 @@ const Vita: Component = () => {
 										}`}
 								>
 									<h3 class="font-semibold text-lg">{item.title}</h3>
-									<p class="mt-1 text-neutral-600">{item.description}</p>
+									<ul class="mt-2 pl-5 list-disc list-outside text-neutral-600 space-y-1">
+										<For each={item.description}>{(point) =>
+											<li innerHTML={point} />
+										}</For>
+									</ul>
 								</div>
 							</div>
 						}</For>

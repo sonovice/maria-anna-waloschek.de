@@ -26,7 +26,7 @@ const Contact: Component = () => {
 	};
 
 	return (
-		<div id="contact" class="bg-neutral-100">
+		<div id="contact" class="bg-white">
 			<div class="container mx-auto px-4 py-8 lg:py-16 text-center">
 				<div class="inline-block uppercase bg-yellow-300 px-3 py-1 font-semibold tracking-wide mb-4">
 					Kontakt
