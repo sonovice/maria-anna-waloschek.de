@@ -3,11 +3,11 @@ import { For, type Component } from "solid-js";
 const Logos: Component = () => {
     // Actual logos from the public folder, including names and URLs
     const logoItems = [
-        { src: 'logos/zhdk-zuerich.svg', name: 'ZHdK Zürich', url: 'https://www.zhdk.ch/' },
+        { src: 'logos/vdm-verband_deutscher_musikschulen.svg', name: 'Verband deutscher Musikschulen', url: 'https://www.musikschulen.de/' },
         { src: 'logos/hmt-muenchen.svg', name: 'HMT München', url: 'https://hmtm.de/' },
         { src: 'logos/hfm-detmold.svg', name: 'HfM Detmold', url: 'https://www.hfm-detmold.de/' },
+        { src: 'logos/musikschule_ludwigshafen.svg', name: 'Städtische Musikschule Ludwigshafen', url: 'https://musikschule.ludwigshafen.de/' },
         { src: 'logos/hfm-wuerzburg.png', name: 'HfM Würzburg', url: 'https://www.hfm-wuerzburg.de/' },
-        { src: 'logos/vdm-verband_deutscher_musikschulen.svg', name: 'Verband deutscher Musikschulen', url: 'https://www.musikschulen.de/' },
         { src: 'logos/epga-european_piano_teacher_association.svg', name: 'European Piano Teachers Association', url: 'https://www.epta-deutschland.de/' },
         { src: 'logos/muku-bielefeld.png', name: 'Musik- und Kunstschule Bielefeld', url: 'https://muku-bielefeld.de/' },
         { src: 'logos/hfm-trossingen.svg', name: 'HfM Trossingen', url: 'https://www.hfm-trossingen.de/' },

@@ -32,28 +32,42 @@ const Carousel: Component = () => {
         },
         {
             id: 2,
-            name: "Jane Doe",
-            title: "CEO at Example Inc.",
+            name: "Angela Bauer",
+            title: (
+                <>
+                    Leiterin der Städtischen Musikschule Ludwigshafen
+                    <br />
+                    Mitglied des Bundesvorstands des Verbandes deutscher Musikschulen e.V.
+                </>
+            ),
             content:
-                "Slide 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-            imageUrl: "portrait.jpg",
+                (<>Maria Waloschek begleitet unsere Musikschule mit großer Empathie und Engagement zielgerichtet und mit echtem Interesse bei unserem Entwicklungsprozess. Ihre Angebote sind praxisnah, inspirierend und eröffnen wertvolle neue Perspektiven. Ich schätze an ihr besonders, wie sie mit Wertschätzung und ruhiger Art jede und jeden mitnimmt.</>),
+            imageUrl: "images/angela_bauer.jpg",
         },
         {
             id: 3,
-            name: "John Smith",
-            title: "Designer at Creative Co.",
+            name: "Konstantin Wolff",
+            title: (
+                <>
+                    Prof. für Gesang
+                    <br />
+                    Hochschule Luzern
+                </>
+            ),
             content:
-                "Slide 3: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            imageUrl: "portrait.jpg",
+                (<>
+                    Ich habe den zweitägigen Kompaktkurs „Künstlerische Leistungen prüfen und bewerten“ belegt und habe dabei sehr profitiert, was meine Wahrnehmung von Prüfungen und die Vorbereitung meines Unterrichts betrifft. Maria Waloschek habe ich dabei als sehr strukturiert,
+                    flexibel und erfahren erlebt. Es war ihr ein Anliegen, auf die Bedürfnisse innerhalb der Gruppe einzugehen und den Kurs so zu einer sehr wertvollen Erfahrung für alle Teilnehmer zu machen.</>),
+            imageUrl: "images/konstantin_wolff.jpg",
         },
-        {
-            id: 4,
-            name: "Alice Green",
-            title: "Developer at Tech Solutions",
-            content:
-                "Slide 4: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-            imageUrl: "portrait.jpg",
-        },
+        // {
+        //     id: 4,
+        //     name: "Alice Green",
+        //     title: "Developer at Tech Solutions",
+        //     content:
+        //         "Slide 4: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        //     imageUrl: "portrait.jpg",
+        // },
     ];
 
     // MARK: - State & Refs
@@ -233,12 +247,12 @@ const Carousel: Component = () => {
                             data-index={index()}
                             class="flex-shrink-0 w-full snap-center flex flex-col items-center justify-center  px-10" // Ensure slide takes full width for snapping
                         >
-                            <p class="text-2xl mb-3 font-yrsa italic text-balance hyphens-auto">„{slide.content}“</p>
+                            <p class="text-2xl mb-3 font-yrsa italic text-balance hyphens-auto">{slide.content}</p>
                             <div class="flex flex-col items-center mt-6">
                                 <img
                                     src={slide.imageUrl}
                                     alt={`${slide.name}, ${slide.title}`}
-                                    class="w-20 h-20 rounded-full mb-4 object-cover"
+                                    class="w-20 h-20 rounded-full mb-4 object-cover shadow-md"
                                 />
                                 <div class="font-semibold text-lg">{slide.name}</div>
                                 <div class="text-sm">{slide.title}</div>
