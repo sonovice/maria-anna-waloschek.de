@@ -2,7 +2,7 @@
 import "./index.css";
 import { render } from "solid-js/web";
 
-import App from "./App";
+// import App from "./App"; // <-- Comment out original App import
 
 const root = document.getElementById("root");
 
@@ -12,9 +12,14 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 	);
 }
 
-// Render the app only if root is a valid HTMLElement
+// Simple test component
+const TestComponent = () => {
+	return <div style="color: black; background-color: white; padding: 20px;">Hello World! This is a test.</div>;
+};
+
+// Render the test component only if root is a valid HTMLElement
 if (root instanceof HTMLElement) {
-	render(() => <App />, root);
+	render(() => <TestComponent />, root); // <-- Render TestComponent instead of App
 } else {
 	// Optional: Add fallback behavior or error logging for production
 	console.error("Root element not found or is not an HTMLElement.");
