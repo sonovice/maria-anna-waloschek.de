@@ -36,6 +36,8 @@ jobs:
         run: bun install
       - name: Build
         run: bun run build # Assuming your build script is named 'build' in package.json
+      - name: Copy index.html to 404.html
+        run: cp ./dist/index.html ./dist/404.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
