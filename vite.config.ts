@@ -6,7 +6,7 @@ export default defineConfig(({ command }) => {
 	// const base = command === 'build' ? '/maria-anna-waloschek.de/' : './'; // Conditional base path
   
 	return {
-	  base: "./",
+	  base: "/",
 	  plugins: [solidPlugin(), tailwindcss()],
 	  server: {
 		port: 3000,
