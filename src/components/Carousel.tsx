@@ -7,8 +7,8 @@ import {
 } from "solid-js";
 
 // MARK: - Constants
-const PAUSE_AFTER_INTERACTION_MS = 15000;
-const AUTO_SLIDE_INTERVAL_MS = 5000;
+const PAUSE_AFTER_INTERACTION_MS = 16000;
+const AUTO_SLIDE_INTERVAL_MS = 8000;
 
 const Carousel: Component = () => {
     // MARK: - Data
