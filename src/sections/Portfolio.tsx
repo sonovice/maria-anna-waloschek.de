@@ -58,9 +58,6 @@ const Portfolio: Component = () => {
 					<h2 class="mt-4 text-3xl font-semibold text-center text-neutral-800">
 						Meine Schwerpunkte
 					</h2>
-					<p class="mt-3 text-center text-neutral-600 max-w-2xl">
-						Mit praxisorientierten Workshops, individueller Begleitung und strategischer Beratung unterstütze ich Musikschulen, Musikhochschulen sowie Einzelpersonen.
-					</p>
 				</div>
 
 				{/* Grid Container */}

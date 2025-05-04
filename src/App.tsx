@@ -11,7 +11,7 @@ const App: Component = () => {
 	return (
 		<Router base={import.meta.env.BASE_URL}>
 			<Route path="/" component={() => <Layout><Home /></Layout>} />
-			<Route path="/vita" component={() => <Layout><Vita /></Layout>} />
+			{/* <Route path="/vita" component={() => <Layout><Vita /></Layout>} /> */}
 			<Route path="/impressum" component={() => <Layout><Impressum /></Layout>} />
 			<Route path="*" component={() => <Layout><NotFound /></Layout>} />
 		</Router>

@@ -26,12 +26,9 @@ const About: Component = () => {
 						</div>
 					</div>
 					<div class="italic lg:pl-6 mt-4 lg:mt-0 lg:w-1/3 text-3xl font-yrsa flex flex-col justify-center text-center">
-						<div class="relative py-4 z-20">
-							Kunstvolle Lehre ist
-							<br class="hidden lg:block" /> kein Zustand,
-							<br class="" /> sondern ein
-							<br class="hidden lg:block" /> Prozess.
-							<div class="absolute -top-4 right-4 z-10">
+						<div class="relative py-4 z-20 text-balance">
+							Kunstvolle Lehre ist kein Zustand, sondern ein Prozess.
+							<div class="absolute -top-4 right-4 -z-10">
 								<svg
 									class="fill-neutral-300 w-12"
 									xmlns="http://www.w3.org/2000/svg"
