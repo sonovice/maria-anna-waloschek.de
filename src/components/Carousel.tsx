@@ -56,7 +56,7 @@ const Carousel: Component = () => {
             ),
             content:
                 (<>
-                    Ich habe den zweitägigen Kompaktkurs „Künstlerische Leistungen prüfen und bewerten“ belegt und habe dabei sehr profitiert, was meine Wahrnehmung von Prüfungen und die Vorbereitung meines Unterrichts betrifft. Maria Waloschek habe ich dabei als sehr strukturiert,
+                    Ich habe den zweitägigen Kompaktkurs „Künstlerische Leistungen prüfen und bewerten“ belegt und habe sehr profitiert, was meine Wahrnehmung von Prüfungen und die Vorbereitung meines Unterrichts betrifft. Maria Waloschek habe ich dabei als sehr strukturiert,
                     flexibel und erfahren erlebt. Es war ihr ein Anliegen, auf die Bedürfnisse innerhalb der Gruppe einzugehen und den Kurs so zu einer sehr wertvollen Erfahrung für alle Teilnehmer zu machen.</>),
             imageUrl: "images/konstantin_wolff.jpg",
         },
