@@ -71,7 +71,7 @@ const Header: Component = () => {
 
 		const observerOptions = {
 			root: null,
-			rootMargin: "-100px 0px -85% 0px",
+			rootMargin: "-50% 0px -50% 0px",
 			threshold: 0,
 		};
 
