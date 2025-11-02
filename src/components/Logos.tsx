@@ -13,7 +13,7 @@ const Logos: Component = () => {
         { src: 'logos/hfm-trossingen.svg', name: 'HfM Trossingen', url: 'https://www.hfm-trossingen.de/' },
         { src: 'logos/hfm-weimar.svg', name: 'HfM Weimar', url: 'https://www.hfm-weimar.de/' },
         { src: 'logos/hfmdk-frankfurt.svg', name: 'HfMDK Frankfurt', url: 'https://www.hfmdk-frankfurt.de/' },
-        { src: 'logos/hmt-koeln.svg', name: 'HMT Köln', url: 'https://www.hfmt-koeln.de/' },
+        { src: 'logos/hmt-koeln.svg', name: 'HfMT Köln', url: 'https://www.hfmt-koeln.de/' },
         { src: 'logos/hslu-luzern.svg', name: 'Hochschule Luzern', url: 'https://www.hslu.ch/de-ch/musik/' },
         { src: 'logos/mdw_wien.svg', name: 'mdw Wien', url: 'https://www.mdw.ac.at/' },
         { src: 'logos/netzwerk_4.0_der_musikhochschulen.svg', name: 'Netzwerk 4.0 der Musikhochschulen', url: 'https://www.netzwerk-musikhochschulen.de/' },

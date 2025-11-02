@@ -47,7 +47,7 @@ Associated Institutions (collaborations, clients, affiliations - inferred from l
 - HfM Trossingen
 - HfM Weimar
 - HfMDK Frankfurt
-- HMT Köln
+- HfMT Köln
 - Hochschule Luzern (HSLU)
 - mdw Wien (University of Music and Performing Arts Vienna)
 - Netzwerk 4.0 der Musikhochschulen 
